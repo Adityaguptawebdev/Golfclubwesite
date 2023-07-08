@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+hmtl,body{
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color:#95c11e ;
+    border-radius: 50px;
+    z-index: 99;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 50px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+
+}
+#nav img{
+    height: 75px;
+}
+#nav h4{
+    text-transform: uppercase;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#main{
+position: inherit;
+background-color: rgba(41, 40, 40, 0.37);
+}
+#page1{
+height: 100vh;
+position: relative;
+width: 100%;
+display: flex;
+align-items: center;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+#page1 h1{
+    font-size: 140px;
+    font-size: 900;
+    position: relative;
+}
+#page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: #151111;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke:2px #95c11e ;
+    z-index: -1;
+}
+#page1 h2{
+    font-size: 30px;
+    font-size: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#page1 p{
+    font-size: 20px;
+    font-size: 500;
+    width: 40%;
+}
+#page2{
+    
+    width: 100%;
+    min-height: 100vh;
+}
+#scroller{
+   animation-name: scroll;
+   animation-duration: 20s;
+   animation-timing-function:linear;
+   animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow-y: hidden;
+
+}
+
+#scroller h1{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: gilroy;
+   -webkit-text-stroke:2px #95c11e;
+    color: transparent;
+
+} 
+#scroller h1 :hover{
+    color: #95c11e;
+}
+@keyframes scroll{
+
+}
+#about-us{
+    height: 40vh;
+    width: 100%;
+    
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#about-us img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#about-us-in{
+    width: 40%;
+    text-align: center;
+}
+#about-us-in h3{
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#about-us-in p{
+    font-size: 20px;
+line-height: 26px;
+}
+#card-container{
+   
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    object-fit: cover;
+}
+.card{
+    height: 80%;
+    width: 24%;
+    
+    border-radius: 30px;
+}
+#card1{
+    background-image: url(./card1.avif);
+    background-size: cover;
+}
+#card2{
+    background-image: url(./card3.avif);
+    background-size: cover;
+}
+#card3{
+    background-image: url(./card2.webp);
+    background-size: cover;
+}
+#green-div{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8ad90b;
+}
+#green-div h4{
+    width: 45%;
+    line-height: 50px;
+    font-size: 27px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    margin-left: 25%;
+}
